@@ -1,3 +1,4 @@
+#-*- coding: utf-8 -*-
 # 털과 날개가 있는지 없는지에 따라, 포유류인지 조류인지 분류하는 신경망 모델을 만들어봅니다.
 import tensorflow as tf
 import numpy as np

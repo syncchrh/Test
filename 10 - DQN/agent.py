@@ -1,3 +1,4 @@
+#-*- coding: utf-8 -*-
 # 게임 구현과 DQN 모델을 이용해 게임을 실행하고 학습을 진행합니다.
 import tensorflow as tf
 import numpy as np

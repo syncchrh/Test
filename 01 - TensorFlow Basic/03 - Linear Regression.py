@@ -6,8 +6,10 @@ import tensorflow as tf
 x_data = [1, 2, 3]
 y_data = [1, 2, 3]
 
-W = tf.Variable(tf.random_uniform([1], -1.0, 1.0))
-b = tf.Variable(tf.random_uniform([1], -1.0, 1.0))
+#W,B 는 TENSORFLOW 의 VARIABLE 알아서 변화 시킨다(트레이닝)
+
+W = tf.Variable(tf.random_uniform([1], -1.0, 1.0), name='weight')
+b = tf.Variable(tf.random_uniform([1], -1.0, 1.0), name='bias')
 
 # name: 나중에 텐서보드등으로 값의 변화를 추적하거나 살펴보기 쉽게 하기 위해 이름을 붙여줍니다.
 X = tf.placeholder(tf.float32, name="X")
@@ -38,7 +40,10 @@ with tf.Session() as sess:
         # 이 때, 가설 수식에 넣어야 할 실제값을 feed_dict 을 통해 전달합니다.
         _, cost_val = sess.run([train_op, cost], feed_dict={X: x_data, Y: y_data})
 
+
+
         print(step, cost_val, sess.run(W), sess.run(b))
+
 
     # 최적화가 완료된 모델에 테스트 값을 넣고 결과가 잘 나오는지 확인해봅니다.
     print("\n=== Test ===")

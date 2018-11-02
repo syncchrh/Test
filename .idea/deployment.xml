@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData">
+    <serverData>
+      <paths name="sseung@192.168.10.165:22">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/sseung/01.Coding/10.Tensorflow_Tutorial" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

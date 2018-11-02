@@ -1,3 +1,4 @@
+#-*- coding: utf-8 -*-
 # 모델을 저장하고 재사용하는 방법을 익혀봅니다.
 
 import tensorflow as tf

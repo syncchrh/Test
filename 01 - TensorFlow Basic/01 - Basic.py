@@ -20,10 +20,10 @@ print(c)
 # 그래프를 실행할 세션을 구성합니다.
 sess = tf.Session()
 # sess.run: 설정한 텐서 그래프(변수나 수식 등등)를 실행합니다.
-print(sess.run(hello))
-print(sess.run(c))
-print(sess.run(d))
-print (aa)
-
+#print(sess.run(hello))
+#print(sess.run(c))
+#print(sess.run(d))
+#print (aa)
+sess.run(c)
 # 세션을 닫습니다.
 sess.close()

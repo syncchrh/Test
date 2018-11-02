@@ -1,3 +1,4 @@
+#-*- coding: utf-8 -*-
 # 장애물 회피 게임 즉, 자율주행차:-D 게임을 구현합니다.
 import numpy as np
 import random

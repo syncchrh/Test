@@ -6,6 +6,7 @@ import tensorflow as tf
 # tf.placeholder: 계산을 실행할 때 입력값을 받는 변수로 사용합니다.
 # None 은 크기가 정해지지 않았음을 의미합니다.
 X = tf.placeholder(tf.float32, [None, 3])
+
 print(X)
 
 # X 플레이스홀더에 넣을 값 입니다.
