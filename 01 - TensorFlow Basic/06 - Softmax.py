@@ -26,5 +26,5 @@ with tf.Session() as sess :
         if step % 100 == 0 :
             print(step, sess.run(cost, feed_dict={X:x_data, Y:y_data}))
 
-    all = sess.run(hypothesis, feed_dict={X: [[1, 11, 7, 9], [1, 3, 4, 3], [151, 1, 10, 1]]})
+    all = sess.run(hypothesis, feed_dict={X: [[1, 11, 7, 9], [1, 3, 4, 3], [151, 1, 10, 1000]]})
     print(all, sess.run(tf.arg_max(all, 1)))
